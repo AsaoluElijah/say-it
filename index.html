@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>SayIt - Convert Speech To Text</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <meta name="google-site-verification" content="3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk" />
+    <link rel="canonical" href="https://asaoluelijah.github.io/sayit/">
+    <meta name="keywords" Content="say-it, sayIt, Speech to text, speech recognition, record speech, record words, words to speech, made in Nigeria, 9ja" />
+    <!-- Twitter Card-->
+    <meta name="twitter:title" content="sayIt">
+    <meta name="twitter:site" content="https://asaoluelijah.github.io/sayit" />
+    <meta name="twitter:creator" content="@asaolu_elijah" />
+    <meta name="twitter:description" content="Easily convert spoken words to text and instantly share across various social media.">
+    <meta name="twitter:image" content="./img/illustration-2.png">
+    <meta name="twitter:card" content="./img/illustration-2.png">
+    <meta name="description" content="Easily convert spoken words to text and instantly share across various social media.">
+    <!--Open Graph-->
+    <meta property="og:image" content="./img/logo.png">
+    <meta property="og:title" content="sayIt" />
+    <meta name="author" content="Asaolu Elijah">
+    <meta property="og:description" content="Easily convert spoken words to text and instantly share across various social media." />
+    <meta name="author" content="Asaolu Elijah">
+    <meta property="og:url" content="https://asaoluelijah.github.io/sayit" />
+    <meta property="og:site_name" content="sayIt" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/app.css" />
+    <link rel="shortcut icon" href="./img/logo.png">
+    <meta name="theme-color" content="#ff4f51" />
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127692724-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127692724-2');
+    </script>
+
+    <!-- Google Knowledge Graph card -->
+    <script type='application/ld+json'>
+        {
+            "@context": "http://www.schema.org",
+            "@type": "sayIt",
+            "name": "sayIt",
+            "url": "https://asaoluelijah.github.io/sayit/",
+            "logo": "https://asaoluelijah.github.io/sayit/img/logo.png",
+            "description": "Easily convert spoken words to text and instantly share across various social media."
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHELZE7673"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VHELZE7673');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>sayIt 🔊</h1>
+        <p class="text-center">Easily convert spoken words to text and instantly share across various social media.
+            <br><br>
+        </p>
+    </header>
+
+    <section id="userInput">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-6 col-sm-6">
+
+                    <!-- NettyFinder Form -->
+                    <form id="nettyFinderForm" onsubmit="compute(event)">
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="alert alert-info text-center" role="alert" id="alert-box">
+                                    Click icon below to start recording
+                                </div>
+                                <div class="icon-wrapper" onclick="startRecording()">
+                                    <center>
+                                        <img src="./img/mic-icon-2.png" alt="" class="mic-icon">
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <label for="output">Your Output: </label>
+                                <textarea id="output" class="form-control" placeholder="You will see the output of your amazing text here 😊"></textarea>
+                            </div>
+                            <div class="col-md-6 col-sm-3">
+                                <button type="button" onclick="copyText()" class="btn submit-btn form-control">Copy Text</button>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!--These buttons are created by frinmash.blogspot.com,frinton madtha-->
+                    <div id="share-buttons" style="display: none;">
+                        <p class="text-center">
+                            Easily share generated output on social media:
+                        </p>
+                        <!-- will be injected automatically -->
+                    </div>
+                    <br><br><br>
+
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="container gif">
+                        <img src="./img/illustration.jpg" style="margin-top: -60px;" class="img-responsive" alt="Happy humans celebrating Nigeria">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+
+                <div class=" col-md-3 col-sm-12 ">
+                    <div class="footer-thumb">
+                        <div class="shareButton">
+                            <a href="https://twitter.com/intent/tweet?&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="I just tried using #sayIt ,it easily helped me convert spoken words to text. Check it out!! cc: @asaolu_elijah" data-show-count="false">Tweet to @asaolu_elijah</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                            <a class="github-button" href="https://github.com/AsaoluElijah/say-it" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star asaoluelijah/say-it on GitHub">Star</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="col-md-5 col-sm-12 ">
+                    <div class="copyright-text ">
+                        <h4>
+                            Made with <span style="color: red;">❤</span> by
+                            <a href="https://asaoluelijah.github.io">Asaolu Elijah</a>
+                            </p>
+                        </h4>
+
+                        <p>&copy; &nbsp;<span id="copy_year"></span>
+                        </p>
+                    </div>
+                </div>
+
+    </footer>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
