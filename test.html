@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <style type="text/css">
+        h1 {
+            text-transform: uppercase;
+        }
+        
+        input {
+            border: 0;
+            outline: 0;
+            width: 130px;
+            height: 40px;
+            font-size: 20px;
+            background: #ffcc00;
+            border-radius: 0 10px 12px 0;
+        }
+        
+        #output {
+            padding: 10px;
+            width: 280px;
+            border-radius: 3px;
+            height: 200px;
+            box-shadow: 0 0 7px #005;
+        }
+    </style>
+    <script>
+        var recognition = new webkitSpeechRecognition() ||
+            root.mozSpeechRecognition ||
+            root.msSpeechRecognition ||
+            root.oSpeechRecognition ||
+            root.SpeechRecognition;
+        recognition.continuous = true;
+        //recognition.interimResults = true;
+        function start() {
+            recognition.onresult = function(event) {
+                console.log(event);
+                var output = document.getElementById("output");
+                output.innerHTML = "";
+
+                for (var i = 0; i < event.results.length; i++) {
+
+                    output.innerHTML = output.innerHTML + event.results[i][0].transcript;
+
+                }
+            }
+            recognition.start();
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        <center>Speech to text</center>
+    </h1>
+    <hr>
+    <br><br>
+    <center><input id="bStart" type="button" value="START" onclick="start();"></input>
+    </center>
+    <br><br>
+    <center>
+        <div>
+            <p id="output"></p>
+        </div>
+    </center>
+</body>
+
+</html>
