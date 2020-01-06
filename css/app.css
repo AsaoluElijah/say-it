@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap');
+@import url('./bootstrap.min.css');
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #23283e;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden !important;
+    font-family: 'Overpass Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    top: -22px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #ff4f51, #ff934a);
+    color: #eee;
+}
+
+h1 {
+    padding: 100px 0 50px 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: bold;
+    color: #fff;
+}
+
+#label {
+    display: none;
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+}
+
+.form-group {
+    padding-top: 5em;
+}
+
+#userInput .section-title h2 {
+    color: #fff;
+}
+
+.shareButton {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.shareButton iframe {
+    border: 0;
+}
+
+.icon-wrapper .mic-icon {
+    margin-bottom: 20px;
+    width: 90px;
+    background-size: cover;
+}
+
+#userInput .spaced {
+    margin: 25px 0 25px !important;
+}
+
+#userInput textarea {
+    height: 160px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 1.5px #5656f4;
+    border: none;
+    outline: none;
+}
+
+#userInput .submit-btn {
+    background: transparent;
+    box-shadow: inset 0 0 0 2px #5656f4;
+    border-radius: 8px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 15px 0 15px 0;
+    color: #000;
+    font-weight: 500;
+}
+
+#userInput .submit-btn:hover {
+    box-shadow: inset 0 0 0 2px #5656f4;
+    background: #6a70e6;
+    color: #000;
+}
+
+#share-buttons img {
+    width: 45px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline-block;
+}
+
+.gif {
+    padding-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #000;
+    position: relative;
+    padding: 50px 0 50px 0;
+}
+
+footer h2 {
+    color: #fff;
+}
+
+footer h3 {
+    color: #fff;
+}
+
+.footer-link {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link li {
+    display: block;
+    list-style: none;
+    margin: 5px 10px 5px 0;
+}
+
+footer p,
+footer span,
+.footer-link li a {
+    color: #fff;
+}
+
+.footer-link li a:hover {
+    color: #2dce89;
+}
+
+.copyright-text p,
+.footer-bottom .phone-contact p {
+    font-size: 14px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 5em;
+    padding-top: 3em;
+}
