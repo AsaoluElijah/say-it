@@ -9,19 +9,8 @@ Easily convert spoken words to text and instantly share across various social me
 
 # Screenshots
 <p>
-  <center>
-  <img src="https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/desktop.png?raw=true" width="200" alt="Desktop View 1">
-    <br/>
-    <img src="https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/desktop-2.png?raw=true" width="200" alt="Desktop View 2">
-  </center>
-  <br/>
-  <center>
     <img src="https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/mobile.png?raw=true" width="200" alt="Desktop View 2">
-    <br/>
-    <img src="https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/mobile-2.png?raw=true" width="200" alt="Desktop View 2">
-  </center>
 </p>
-
 
 # License
 
