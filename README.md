@@ -10,15 +10,15 @@ Easily convert spoken words to text and instantly share across various social me
 # Screenshots
 <p>
   <center>
-    ![Desktop View 1](https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/desktop.png)
+  <img src="https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/desktop.png?raw=true" width="200" alt="Desktop View 1">
     <br/>
-    ![Desktop View 2](https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/desktop-2.png)
+    <img src="https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/desktop-2.png?raw=true" width="200" alt="Desktop View 2">
   </center>
   <br/>
   <center>
-    ![Mobile View 2](https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/mobile.png)
+    <img src="https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/mobile.png?raw=true" width="200" alt="Desktop View 2">
     <br/>
-    ![Mobile View 2](https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/mobile-2.png)
+    <img src="https://github.com/asaoluelijah/say-it/blob/master/img/screenshots/mobile-2.png?raw=true" width="200" alt="Desktop View 2">
   </center>
 </p>
 
