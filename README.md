@@ -6,6 +6,8 @@
 </div>
 
 Easily convert spoken words to text and instantly share across various social media.
+***
+#### View live version [here](https://asaoluelijah.github.io/sayit)
 
 # Screenshots
 <p>
