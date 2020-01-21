@@ -1,5 +1,5 @@
 "use strict";
-const textOutput = "";
+var textOutput = document.getElementById("output");
 var recognition = new webkitSpeechRecognition() ||
     root.mozSpeechRecognition ||
     root.msSpeechRecognition ||
@@ -8,11 +8,13 @@ var recognition = new webkitSpeechRecognition() ||
 recognition.continuous = true;
 
 function startRecording() {
-    document.getElementById('alert-box').classList.add('alert-danger');
-    setTimeout(() => {
-        document.getElementById('alert-box').innerHTML = "Started Recorder, Now Try Say Something 🔊";
-    }, 1000);
 
+    recognition.onstart = function() {
+        document.getElementById('alert-box').classList.add('alert-primary');
+        setTimeout(() => {
+            document.getElementById('alert-box').innerHTML = "Started Recorder, Now Try Say Something 🔊";
+        }, 1000);
+    }
     recognition.onresult = function(event) {
         console.log(event);
         var output = document.getElementById("output");
@@ -20,20 +22,17 @@ function startRecording() {
 
         for (var i = 0; i < event.results.length; i++) {
             output.innerHTML = output.innerHTML + event.results[i][0].transcript;
-            textOutput += event.results[i][0].transcript;
-            if (textOutput == "" || textOutput == " ") {
-                textOutput = "No output generated"
-            }
         }
     }
     recognition.start();
+
     recognition.onend = function() {
         document.getElementById('alert-box').classList.add('alert-danger');
         setTimeout(() => {
             document.getElementById('alert-box').innerHTML = "Recording Has Stopped 👏";
         }, 1000);
         setTimeout(() => {
-            showShareButtons(textOutput);
+            showShareButtons(textOutput.value);
         }, 2000);
     }
 }
@@ -43,15 +42,10 @@ function copyText() {
     if (copyText.value === "") {
         alert('Nothing to copy here')
     } else {
-
-        /* Select the text field */
         copyText.select();
         copyText.setSelectionRange(0, 99999); /*For mobile devices*/
 
-        /* Copy the text inside the text field */
         document.execCommand("copy");
-
-        /* Alert the copied text */
         alert("Text Copied to clipboard 🚀");
     }
 }
@@ -93,8 +87,7 @@ c.innerHTML = cd;
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
         navigator.serviceWorker.register('./sw.js').then(function() {
-            // console.log("Service Worker Registered!");
-
+            console.log("Service Worker Registered!");
         });
     });
 }
