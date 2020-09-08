@@ -7,7 +7,7 @@
 
 Easily convert spoken words to text and instantly share across various social media.
 ***
-#### View the project live  [here](https://asaoluelijah.github.io/sayit)
+#### View the project live  [here](https://asaoluelijah.github.io/say-it)
 
 # Screenshots
 <p>
